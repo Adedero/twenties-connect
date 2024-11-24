@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: var(--primary-font), Inter, Roboto, Verdana, Trebuchet, system-ui, sans-erif;
   width: 100dvw;
   overflow-x: hidden;
 }
