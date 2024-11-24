@@ -1,0 +1,40 @@
+:root {
+  /* Primary Colors */
+  --primary: rgb(61, 1, 91);
+  --primary-light: rgb(97, 46, 113);
+  --primary-lighter: rgb(181, 154, 189);
+
+  /* Secondary Colors */
+  --secondary: rgb(2, 246, 182);
+  --secondary-light: rgb(103, 251, 207);
+  --secondary-lighter: rgb(179, 253, 229);
+
+  /* Purple Shades */
+  --purple: rgb(123, 28, 122);
+  --purple-light: rgb(153, 76, 151);
+  --purple-lighter: rgb(205, 161, 204);
+
+  /* Orange Shades */
+  --orange: rgb(254, 76, 2);
+  --orange-light: rgb(255, 141, 84);
+  --orange-lighter: rgb(255, 197, 163);
+
+  /* Neutral Colors */
+  --white: rgb(255, 239, 255);
+  --white-light: rgb(255, 247, 255);
+  --white-lighter: rgb(255, 251, 255);
+
+  --black: rgb(8, 13, 9);
+  --black-light: rgb(51, 57, 53);
+  --black-lighter: rgb(98, 104, 101);
+  --black-transparent: rgb(8, 13, 9, 0.4); 
+}
+
+:root {
+  --text-color: var(--black);
+  --primary-font: 'Chillax-Variable';
+  --secondary-font:  'Base-Neue-Regular';
+  --border-radius: 6px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twenties Connect</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./scripts//libs/aos/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_vert" />
+</head>
+<body class="has-[input[data-role=menu]:checked]:overflow-hidden">
+  <main class="relative w-dvw overflow-x-hidden">
+    <!-- Hero -->
+    <section id="home" class="z-10 hero bg-[url(../assets/img/conference.jpg)] h-dvh bg-no-repeat bg-cover relative transition-all duration-500 before:transition-all before:duration-500 before:absolute before:content-[''] before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-b from-primary-800 to-primary-500/50 before:bg-opacity-80 before:z-[-1]">
+      <header data-aos="fade-down" class="z-[100] md:px-16 lg:px-36 fixed top-0 left-0 w-full flex items-center justify-between gap-2 p-5 text-white">
+        <a href="/" class="header__logo block text-secondary-500 scroll">
+          <span data-icon="logo" data-width="45" data-height="45"></span>
+        </a>
+
+        <div class="flex items-center gap-8">
+          <nav class="hidden lg:text-xl lg:flex items-center gap-4">
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#about" class="nav__link">About</a>
+            <a href="#speakers" class="nav__link">Speakers</a>
+            <a href="#sponsors" class="nav__link">Sponsors</a>
+            <a href="#contact" class="nav__link">Contact</a>
+          </nav>
+
+          <a href="#waitlist-form" class="mr-8 md:mr-0">
+            <button type="button" class="header__btn btn secondary md:text-lg">Join Waitlist</button>
+          </a>
+
+          <div class="flex-shrink-0 lg:hidden">
+            <input type="checkbox" data-role="menu" id="menu" placeholder="Menu" class="peer hidden">
+            <label for="menu" class="fixed z-[9999] top-5 right-5 group cursor-pointer flex flex-col justify-center gap-1 rounded-full p-2
+              aspect-square overflow-hidden bg-secondary-500
+              transition-all duration-500 *:transition-all *:duration-500">
+              <div class="bar h-[2.5px] w-8 bg-primary-500"></div>
+              <div class="bar h-[2.5px] w-6 bg-primary-500 group-hover:w-8"></div>
+              <div class="bar h-[2.5px] w-4 bg-primary-500 group-hover:w-8"></div>
+            </label>
+
+            <div class="transition-all duration-500 overlay z-[999] fixed w-dvw h-0 peer-checked:h-dvh overflow-hidden top-0 right-0
+              bg-primary-500">
+              <div class="w-full h-full py-20 px-5 flex flex-col gap-4 text-right">
+                <nav class="text-4xl lg:text-6xl grid gap-8 mt-8">
+                  <a href="#home" class="nav__link">Home</a>
+                  <a href="#about" class="nav__link">About</a>
+                  <a href="#speakers" class="nav__link">Speakers</a>
+                  <a href="#sponsors" class="nav__link">Sponsors</a>
+                  <a href="#contact" class="nav__link">Contact</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="h-full flex flex-col justify-center md:justify-end pb-20 text-white">
+        <h1 data-aos="fade-left" class="font-bold text-6xl md:text-7xl lg:text-[5rem] xl:text-8xl">Twenties Connect</h1>
+        <div data-aos="fade-left" data-aos-delay="100" class="text-fire-400 text-4xl md:text-5xl lg:text-6xl">
+          connecting the dots
+          <div class="-translate-x-2 inline-block h-2 aspect-square rounded-full bg-secondary-500"></div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="200" class="mt-10">
+          <div class="flex items-center gap-2 text-xl md:text-[1.6rem] font-medium">
+            <span data-icon="calendar" data-width="26" data-height="26"></span>
+            <span>March 1, 2025</span>
+          </div>
+
+          <div class="flex items-center gap-2 text-xl md:text-[1.6rem] font-medium">
+            <span data-icon="location" data-width="26" data-height="26"></span>
+            <span>Landmark Event Centre</span>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="mt-10">
+          <a href="#waitlist-form">
+            <button type="button" class="btn large fire">Join The Waitlist!</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-[--white] py-20">
+      <div data-aos="fade-up" class="flex items-center gap-2">
+        <div class="twenties-block rounded-lg hidden w-28 aspect-square md:grid grid-cols-2 overflow-hidden"></div>
+        <p class="text-6xl md:text-5xl lg:text-6xl font-semibold text-primary-500">About <br> Twenties Connect</p>
+      </div>
+      <div class="mt-5 flex flex-col lg:flex-row gap-5">
+        <div data-aos="fade-up" data-aos-delay="100" class="flex-shrink-0 overflow-hidden bg-slate-300 w-full lg:w-96 h-96 lg:h-auto aspect-square">
+          <img src="./assets/img/conference-3.jpg" alt="conference" class="w-full h-full object-cover saturate-0
+            transition-all duration-500 hover:saturate-100 hover:scale-110">
+        </div>
+
+        <div class="mt-3 lg:mt-0 text-pretty">
+          <p data-aos="fade-up" class="text-fire-500 text-xl font-semibold">Do You Ever Find Your Twenties Journey Overwhelming?</p>
+          <p data-aos="fade-up" data-aos-delay="100" class="mt-2">
+            Are you wondering what career to settle into? <br />
+            Or do you desire to run your business better, making fewer mistakes? <br />
+            Maybe you plan to retire early but struggle to manage your finances with the crazy inflation rates. <br />
+            We know you have a lot of questions and find yourself wondering “what's next” on some days. <br />
+          </p>
+
+          <p data-aos="fade-up" class="mt-6">
+            At Twenties Connect, you can learn from the different journeys of our amazing speakers and get practical guidance on how to thrive in your adulting journey, from your health to finances and career and everything in between! 
+          </p>
+
+          <p data-aos="fade-up" class="mt-6">
+            What's more? It is a gathering of amazing people in their twenties that you can meet and connect with. Who knows? Your next project partnership, business relationship, or life-long friendship can kickstart at Twenties Connect!
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="z-1 relative py-20">
+      <p data-aos="fade-right" class="text-center text-6xl md:text-5xl lg:text-6xl font-semibold text-fire-500">Join Our Waitlist!</p>
+
+      <div data-aos="fade-left" data-aos-delay="100" class="mt-10 w-full grid place-content-center">
+        <form id="waitlist-form" action="" class="w-[90dvw] md:max-w-[44rem]">
+          <div class="bg-white p-5 py-8 md:p-8 rounded-xl md:shadow-lg grid gap-5 md:grid-cols-2">
+            <div>
+              <input class="input" type="text" placeholder="Your Name">
+            </div>
+
+            <div>
+              <input class="input" type="email" placeholder="Your Email">
+            </div>
+
+            <div>
+              <input class="input" type="text" placeholder="Your Phone Number">
+            </div>
+
+            <div>
+              <input class="input" type="text" placeholder="Your Location">
+            </div>
+
+            <div class="md:col-span-2">
+              <textarea rows="5" class="input resize-none w-full" placeholder="Your Expectations"></textarea>
+            </div>
+            
+            <div class="md:col-span-2">
+              <button type="submit" class="btn large secondary w-full">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="absolute z-[-1] top-0 left-0 w-full h-72 bg-primary-500"></div>
+      <div class="absolute z-[-1] top-72 left-0 w-full h-[36rem] md:h-[25rem] bg-[url(../assets/img/bg.png)] bg-no-repeat overflow-hidden"></div>
+    </section>
+
+    <!-- Speakers -->
+    <section id="speakers" class="bg-[--white] py-20">
+      <div data-aos="fade-up" class="text-center grid gap-2">
+        <p class="text-6xl md:text-5xl lg:text-6xl font-semibold text-primary-500">Who's Speaking</p>
+        <p class="text-fire-500 text-xl font-semibold">Meet our team of dedicated speakers.</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
+        <div class="relative group">
+          <div class="w-full h-60 bg-slate-300 overflow-hidden">
+            <img src="./assets/img/speakers/speaker-1.jpg" alt="speaker 1"
+              class="group-hover:scale-125 w-full h-full object-cover transition-transform duration-500">
+          </div>
+
+          <div class="z-[2] absolute rounded-full bg-[--white] overflow-hidden h-12 px-4 py-2 w-fit left-1/2 -translate-x-1/2 bottom-24
+            transition-all duration-500 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+            <div class="flex items-center justify-center gap-2 h-full w-full mt-1">
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="facebook" data-width="28" data-height="28"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="linkedin"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="instagram"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="x" data-width="38" data-height="38"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="z-[1] text-center h-24 grid place-content-center relative
+            before:absolute before:z-[-1] before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-0
+            before:bg-[--black] before:transition-all before:duration-500 group-hover:before:h-28">
+            <p class="group-hover:text-[--white] font-semibold text-xl transition-colors duration-500">Amalagu Chike</p>
+            <p class="text-sm text-fire-500 uppercase">Ceo, Emxchange</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="w-full h-60 bg-slate-300 overflow-hidden">
+            <img src="./assets/img/speakers/speaker-2.jpg" alt="speaker 1"
+              class="group-hover:scale-125 w-full h-full object-cover transition-transform duration-500">
+          </div>
+
+          <div class="z-[2] absolute rounded-full bg-[--white] overflow-hidden h-12 px-4 py-2 w-fit left-1/2 -translate-x-1/2 bottom-24
+            transition-all duration-500 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+            <div class="flex items-center justify-center gap-2 h-full w-full mt-1">
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="facebook" data-width="28" data-height="28"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="linkedin"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="instagram"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="x" data-width="38" data-height="38"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="z-[1] text-center h-24 grid place-content-center relative
+            before:absolute before:z-[-1] before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-0
+            before:bg-[--black] before:transition-all before:duration-500 group-hover:before:h-28">
+            <p class="group-hover:text-[--white] font-semibold text-xl transition-colors duration-500">Amalagu Chike</p>
+            <p class="text-sm text-fire-500 uppercase">Ceo, Emxchange</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="w-full h-60 bg-slate-300 overflow-hidden">
+            <img src="./assets/img/speakers/speaker-3.jpg" alt="speaker 1"
+              class="group-hover:scale-125 w-full h-full object-cover transition-transform duration-500">
+          </div>
+
+          <div class="z-[2] absolute rounded-full bg-[--white] overflow-hidden h-12 px-4 py-2 w-fit left-1/2 -translate-x-1/2 bottom-24
+            transition-all duration-500 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+            <div class="flex items-center justify-center gap-2 h-full w-full mt-1">
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="facebook" data-width="28" data-height="28"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="linkedin"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="instagram"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="x" data-width="38" data-height="38"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="z-[1] text-center h-24 grid place-content-center relative
+            before:absolute before:z-[-1] before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-0
+            before:bg-[--black] before:transition-all before:duration-500 group-hover:before:h-28">
+            <p class="group-hover:text-[--white] font-semibold text-xl transition-colors duration-500">Amalagu Chike</p>
+            <p class="text-sm text-fire-500 uppercase">Ceo, Emxchange</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="w-full h-60 bg-slate-300 overflow-hidden">
+            <img src="./assets/img/speakers/speaker-4.jpg" alt="speaker 1"
+              class="group-hover:scale-125 w-full h-full object-cover transition-transform duration-500">
+          </div>
+
+          <div class="z-[2] absolute rounded-full bg-[--white] overflow-hidden h-12 px-4 py-2 w-fit left-1/2 -translate-x-1/2 bottom-24
+            transition-all duration-500 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+            <div class="flex items-center justify-center gap-2 h-full w-full mt-1">
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="facebook" data-width="28" data-height="28"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="linkedin"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="instagram"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="x" data-width="38" data-height="38"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="z-[1] text-center h-24 grid place-content-center relative
+            before:absolute before:z-[-1] before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-0
+            before:bg-[--black] before:transition-all before:duration-500 group-hover:before:h-28">
+            <p class="group-hover:text-[--white] font-semibold text-xl transition-colors duration-500">Amalagu Chike</p>
+            <p class="text-sm text-fire-500 uppercase">Ceo, Emxchange</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="w-full h-60 bg-slate-300 overflow-hidden">
+            <img src="./assets/img/speakers/speaker-5.jpg" alt="speaker 1"
+              class="group-hover:scale-125 w-full h-full object-cover transition-transform duration-500">
+          </div>
+
+          <div class="z-[2] absolute rounded-full bg-[--white] overflow-hidden h-12 px-4 py-2 w-fit left-1/2 -translate-x-1/2 bottom-24
+            transition-all duration-500 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+            <div class="flex items-center justify-center gap-2 h-full w-full mt-1">
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="facebook" data-width="28" data-height="28"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="linkedin"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="instagram"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="x" data-width="38" data-height="38"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="z-[1] text-center h-24 grid place-content-center relative
+            before:absolute before:z-[-1] before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-0
+            before:bg-[--black] before:transition-all before:duration-500 group-hover:before:h-28">
+            <p class="group-hover:text-[--white] font-semibold text-xl transition-colors duration-500">Amalagu Chike</p>
+            <p class="text-sm text-fire-500 uppercase">Ceo, Emxchange</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="w-full h-60 bg-slate-300 overflow-hidden">
+            <img src="./assets/img/speakers/speaker-6.jpg" alt="speaker 1"
+              class="group-hover:scale-125 w-full h-full object-cover transition-transform duration-500">
+          </div>
+
+          <div class="z-[2] absolute rounded-full bg-[--white] overflow-hidden h-12 px-4 py-2 w-fit left-1/2 -translate-x-1/2 bottom-24
+            transition-all duration-500 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+            <div class="flex items-center justify-center gap-2 h-full w-full mt-1">
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="facebook" data-width="28" data-height="28"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="linkedin"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="instagram"></span>
+              </a>
+              <a href="#" class="transition-colors text-slate-500 hover:text-[--black]">
+                <span data-icon="x" data-width="38" data-height="38"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="z-[1] text-center h-24 grid place-content-center relative
+            before:absolute before:z-[-1] before:content-[''] before:bottom-0 before:left-0 before:w-full before:h-0
+            before:bg-[--black] before:transition-all before:duration-500 group-hover:before:h-28">
+            <p class="group-hover:text-[--white] font-semibold text-xl transition-colors duration-500">Amalagu Chike</p>
+            <p class="text-sm text-fire-500 uppercase">Ceo, Emxchange</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsros -->
+     <section id="sponsors" class="py-20 z-[5] hero bg-[url(../assets/img/conference-2.jpg)] bg-no-repeat bg-cover relative transition-all duration-500 before:transition-all before:duration-500 before:absolute before:content-[''] before:left-0 before:top-0 before:w-full before:h-full
+     before:bg-[--black-transparent] before:bg-opacity-30 before:z-[-1]">
+      <div data-aos="fade-up" class="text-center grid gap-2">
+        <p class="text-center text-6xl md:text-5xl lg:text-6xl font-semibold text-[--white]">Sponsors</p>
+        <p class="text-secondary-500 text-xl font-semibold">Twenties Connect is supported by</p>
+      </div>
+
+      <div class="mt-10 w-full flex flex-col items-center justify-center">
+        <div class="grid md:grid-cols-2 gap-4 w-dvw px-5 md:w-[38rem]">
+          <div data-aos="flip-left" class=" bg-[--white] p-5 rounded-xl h-32 grid place-content-center">
+            <p class="font-semibold text-2xl text-fire-500">Sponsor</p>
+          </div>
+
+          <div data-aos="flip-left" data-aos-delay="100" class="bg-[--white] p-5 rounded-xl h-32 grid place-content-center">
+            <p class="font-semibold text-2xl text-fire-500">Sponsor</p>
+          </div>
+
+          <div data-aos="flip-left" data-aos-delay="200" class=" bg-[--white] p-5 rounded-xl h-32 grid place-content-center">
+            <p class="font-semibold text-2xl text-fire-500">Sponsor</p>
+          </div>
+
+          <div data-aos="flip-left" data-aos-delay="300" class="bg-[--white] p-5 rounded-xl h-32 grid place-content-center">
+            <p class="font-semibold text-2xl text-fire-500">Sponsor</p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <hr>
+          <div data-aos="fade-up" class="mt-8 text-center text-[--white] font-medium">
+            <p class="text-2xl font-semibold">Are you passionate about youths in their twenties?</p>
+            <p>Twenties Connect presents an amazing opportunity to positively impact the journeys of 2000+ twenty-somethings.</p>
+            <p>Want to support this event? </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100" class="mt-10 grid place-content-center">
+            <button type="button" class="btn fire large uppercase">click here for more details</button>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- Exhibitors -->
+     <section id="exhibitors" class="bg-[--white] py-20">
+      <div data-aos="fade-up" class="text-center grid gap-2">
+        <p class="text-6xl md:text-5xl lg:text-6xl font-semibold text-primary-500">Become An Exhibitor</p>
+        <p class="text-fire-500 text-xl font-semibold">Showcase your product and services to our delightful attendees at Twenties Connect.</p>
+      </div>
+     </section>
+
+     <section class="bg-primary-500 py-20 flex items-center justify-center border-b-[4px] border-[--white]">
+      <div class="text-center grid gap-2 w-full md:max-w-[48rem]">
+        <div data-aos="fade-down" class="z-[1] rounded-full px-3 py-4 border-2 border-[--white] bg-secondary-500">
+          <p class="text-2xl md:text-5xl lg:text-6xl font-semibold text-primary-500">We'd love to see you</p>
+        </div>
+
+        <div class="tilt transition-all duration-300 ease-linear rounded-full px-3 py-4 border-2 border-[--white] bg-fire-500">
+          <p class="text-2xl md:text-5xl lg:text-6xl font-semibold text-[--white]"> at Twenties Connect!</p>
+        </div>
+
+        <a href="#" class="tilt z-[1] group transition-all duration-300 hover:shadow-lg hover:shadow-secondary-500/30 rounded-full px-3 py-4 border-2 border-[--white] bg-[--purple] overflow-hidden">
+          <p class="group-hover:scale-110  transition-all duration-300 delay-300 text-2xl md:text-5xl lg:text-6xl font-semibold text-[--white]">Join The Waitlist</p>
+        </a>
+
+      </div>
+     </section>
+
+     <footer id="contact"  class="py-20 z-[1] hero bg-[url(../assets/img/conference.jpg)] bg-no-repeat bg-cover relative transition-all duration-500 before:transition-all before:duration-500 before:absolute before:content-[''] before:left-0 before:top-0 before:w-full before:h-full before:bg-primary-800/95 before:bg-opacity-80 before:z-[-1]">
+      <a href="/" class="text-secondary-500 flex items-center gap-1">
+        <span data-icon="logo" data-width="30" data-height="30"></span>
+        <h1 class="text-3xl md:text-4xl font-semibold">Twenties Connect</h1>
+      </a>
+      <hr class="my-5">
+      <div class="flex flex-col md:flex-row items-start gap-3 justify-between">
+        <div>
+          <div class="flex items-center text-[--white] gap-2 text-lg font-medium">
+            <span data-icon="calendar" data-width="20" data-height="20"></span>
+            <span>March 1, 2025</span>
+          </div>
+
+          <div class="flex items-center text-[--white]  gap-2 text-lg font-medium">
+            <span data-icon="location" data-width="20" data-height="20"></span>
+            <span>Landmark Event Centre</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="#" class="transition-colors text-[--white] hover:text-secondary-500">
+            <span data-icon="facebook" data-width="36" data-height="36"></span>
+          </a>
+          <a href="#" class="transition-colors text-[--white] hover:text-secondary-500">
+            <span data-icon="linkedin" data-width="31" data-height="31"></span>
+          </a>
+          <a href="#" class="transition-colors text-[--white] hover:text-secondary-500">
+            <span data-icon="instagram" data-width="31" data-height="31"></span>
+          </a>
+        </div>
+      </div>
+
+     </footer>
+  </main>
+
+  <script src="scripts/libs/aos/aos.js"></script>
+  <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
