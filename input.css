@@ -1,6 +1,7 @@
 @import './styles/base.css';
 @import './assets/fonts/chillax/chillax.css';
 @import './assets/fonts/base-neue/base-neue.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,13 +12,17 @@ html {
 }
 
 body {
-  font-family: var(--primary-font), Inter, Roboto, Verdana, Trebuchet, system-ui, sans-erif;
+  font-family: var(--primary-font), serif Arial, Helvetica, sans-serif;
   width: 100dvw;
   overflow-x: hidden;
 }
 
+.chillax {
+  font-family: var(--secondary-font);
+}
+
 .btn {
-  @apply text-white font-bold py-2.5 px-5 shadow rounded relative overflow-hidden transition-all duration-300 ease-linear;
+  @apply text-white font-semibold py-2.5 px-5 shadow rounded relative overflow-hidden transition-all duration-300 ease-linear;
   @apply hover:rounded-[5rem];
 }
 
@@ -105,7 +110,7 @@ header.scroll {
 }
 
 .input {
-  @apply w-full px-2 py-3 border border-secondary-500 transition-all duration-300 outline-none rounded-md text-primary-500 font-medium;
+  @apply w-full px-2 py-3 border border-secondary-500 transition-all duration-300 outline-none rounded-md text-primary-500 text-lg font-medium;
   @apply focus:bg-secondary-100/20 focus:border-secondary-600;
   @apply hover:shadow hover:shadow-secondary-500/10;
 }
