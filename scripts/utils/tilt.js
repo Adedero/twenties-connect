@@ -11,6 +11,7 @@ const tiltText = () => {
   }, options);
 
   const els = document.querySelectorAll('.tilt');
+  if (!els) return;
   els.forEach(el => {
     observer.observe(el);
   });

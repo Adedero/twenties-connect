@@ -11,6 +11,8 @@ export default function countdown (targetDate) {
   const secondsElement = document.querySelector("#countdown-seconds .chillax");
   const secondsText = document.querySelector("#countdown-seconds .font-semibold:last-child");
 
+  if (!countdownElement) return;
+
   function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
